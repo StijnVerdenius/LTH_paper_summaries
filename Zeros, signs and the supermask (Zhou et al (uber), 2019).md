@@ -40,7 +40,7 @@ Turns out this does not work, except for at high levels of sparsity.
 
 > To test this hypothesis, authors propose a halfway experiment: freeze pruned weights to 0 if they head towards 0, or to initial value if it moves away from 0. (Variant 1) By doing this they achieve similar performance as original LT network at low pruning rates, and better at higher pruning rates. Authors also use this idea as a mask-1 action i.e. they use it for the kept weights too (Variant 2), achieving even better results than the first variant. Thus, masking can be viewed as training.
 
---
+---
 
 ## Supermask
 
