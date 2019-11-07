@@ -12,5 +12,5 @@ Also they discover the existence of Supermasks (masks that produce above-chance 
 
 Looked at metrics that compare initial wieght with final weight.
 
-![alt text](./figs/Zeros_signs_and_the_supermask/mask-criteria.png )
+![alt text](./figs/Zeros_signs_and_the_supermask/mask-criteria.png "figure2, mask criteria")
 
