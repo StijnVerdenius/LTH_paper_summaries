@@ -1,4 +1,5 @@
 # Zeros, signs and the supermask
+[Link to paper](https://arxiv.org/pdf/1905.01067.pdf)
 
 Authors perform ablation study on the main components of the LT algorithm, specifically on:
 
@@ -44,11 +45,19 @@ Turns out this does not work, except for at high levels of sparsity.
 
 ## Supermask
 
-A supermask is a mask that applied to a randomly initialized untrained network produces results better than chance.
+##### motivation
 
-Using previous findings, authors propose the large_final_same_sign mask criterion which selects weights with large final magnitudes that also maintained their initial sign. Converting weights to signed constants are also helped.
+*"The masking operation tends to move weights in the direction they would have moved during training. So what if we don't train at all?"*
 
-**Supermasks can also be trained:**
+##### What is a supermask?
+
+A supermask is a mask that applied to a randomly initialized untrained network produces results better than chance. They use the same large magnitude pruning, but then a version that also prunes weights that did not maintain their initial sign.
+
+__So they do train the unpruned network, just not after pruning__
+
+Converting weights to signed constants are also worked.
+
+##### Supermasks can also be trained:
 
 Instead of training the network, train a binary mask tensor over the weights.
 
@@ -62,8 +71,8 @@ Also, dynamic weight rescaling helps. Learned supermasks result in performance c
 
 # REVIEW LATER
 
-- Networks work well when mask-1 weights are set close to their final value; 
-- Alternative freezing schemes and mask criteria have been introduced; 
+- Networks work well when mask-1 weights are set close to their final value
+- Alternative freezing schemes and mask criteria have been introduced
 - The only element of the original initialization that is crucial to the performance of LT networks is the sign, not relative magnitude of the weights; 
 - Masking can be thought of as training, therefore authors uncover the existence of supermasks which produce partially working networks without training.
 
