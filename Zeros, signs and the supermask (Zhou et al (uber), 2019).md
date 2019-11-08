@@ -53,13 +53,13 @@ Turns out this does not work, except for at high levels of sparsity.
 
 A supermask is a mask that applied to a randomly initialized untrained network produces results better than chance. They use the same large magnitude pruning, but then a version that also prunes weights that did not maintain their initial sign.
 
-So they do train the unpruned network, just not after pruning
+So they do train the unpruned network, just not after pruning and get good performance.
 
-Converting weights to signed constants are also worked.
+Converting weights to signed constants also worked remarkably.
 
 ##### Supermasks can also be trained:
 
-Instead of training the network, train a binary mask tensor over the weights.
+Instead of training the network, train a binary (bernoulli over a sigmoid) mask tensor over the weights.
 
 - 95% on MNIST 
 - 65% on CIFAR10. 
@@ -71,8 +71,10 @@ Also, dynamic weight rescaling helps. Learned supermasks result in performance c
 
 # REVIEW LATER
 
+- No new Mask-1 actions
 - Networks work well when mask-1 weights are set close to their final value
-- Alternative freezing schemes and mask criteria have been introduced
-- The only element of the original initialization that is crucial to the performance of LT networks is the sign, not relative magnitude of the weights; 
+- Alternative freezing schemes and mask-0 criteria have been introduced
+- The element of the original initialization that is most crucial is the sign, not relative magnitude of the weights; 
 - Masking can be thought of as training, therefore authors uncover the existence of supermasks which produce partially working networks without training.
+- We can also train masks
 
