@@ -1,4 +1,6 @@
 # Lottery Ticket Hypothesis:
+[Link to paper](https://arxiv.org/abs/1803.03635)
+
 
 A randomly-initialized, dense neural network contains a subnet-work that is initialized such that—when trained in isolation—it can match the test accuracy of the original network after training for at most the same number of iterations.
 

@@ -69,7 +69,7 @@ There is no straightforward way of controlling the amount of pruning, only by sl
 Also, dynamic weight rescaling helps. Learned supermasks result in performance close to training the full network -> therefore a network already contains powerful subnetworks at initialization, that work well without training.
 
 
-# REVIEW LATER
+## Conclusion
 
 - No new Mask-1 actions
 - Networks work well when mask-1 weights are set close to their final value
@@ -78,3 +78,7 @@ Also, dynamic weight rescaling helps. Learned supermasks result in performance c
 - Masking can be thought of as training, therefore authors uncover the existence of supermasks which produce partially working networks without training.
 - We can also train masks
 
+## Limitations of supermasking
+
+- Still need to train full network a little before you can supermask
+- If you train your mask, did you not just move the problem of training to a different parameter-set?
