@@ -53,7 +53,7 @@ Turns out this does not work, except for at high levels of sparsity.
 
 A supermask is a mask that applied to a randomly initialized untrained network produces results better than chance. They use the same large magnitude pruning, but then a version that also prunes weights that did not maintain their initial sign.
 
-__So they do train the unpruned network, just not after pruning__
+So they do train the unpruned network, just not after pruning
 
 Converting weights to signed constants are also worked.
 
