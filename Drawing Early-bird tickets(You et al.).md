@@ -49,3 +49,6 @@ Therefore, to identify when to extract EB ticket, measure mask distance between 
 ### EB training
 Literally draw an EB ticket according to the criterion mentioned couple lines above, reset it to its initial weights, and then fine-tune it. That's all.
 It compares favorably to other SOTA pruning methods such as Lottery Ticket, SNIP, Network Slimming and ThiNet, in terms of FLOPs and energy consumption. (which easily translates to speed) (see paper for more details)
+
+### Potential research directions (Andrei)
+Use iterative magnitude pruning to attain higher sparsity. See if rewinding to a later iteration helps (authors rewind all the way back to 0).
