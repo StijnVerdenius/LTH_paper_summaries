@@ -26,12 +26,31 @@ On top of that, they have a strong background section with papers you should rea
 
 ## Results
 
+### Performance experiments
+
 - For pruning methods with predefined target architectures, training the small models for the same number of epochs as the large model, is often enough to achieve the same accuracy as models output by the three-stage pipeline. Combined with the fact that the target architecture is predefined, in practice one would prefer to train the small model from scratch directly. Moreover, when provided with the same amount of computation budget, can even lead to better performance.
-- Unstructured pruning results are similar in all settings.
+- Unstructured pruning results are similar in all settings. The inherited weights in the pruned architecture are not better than random
+
+### Architecture search
+
+Best contribution of pruning algorithms is architecture search according to authors
+
+- Network slimming is more efficient than uniform-pruning in structured pruning
+- For non-structured weight pruning
+
+They attempt at learning better design principals from pruning results (*“Guided Pruning & Guided Sparsifying”*): 
+
+- Performs the same as pruned networks
+- Gets to decent performance quicker than other arch-search methods (RL & EC). However, search space limited to subspace on subnetworks.
+
+
 
 ## Conclusion
 
-## Discussion
+- Pruning algorithms make big assumptions/claims and do not train valid baselines
+- Main contribution is architecture search, at wwhich it is very efficient
+- Under conditions, you can train these architectures from scratch
+- Over-parameterization is your enemy
 
 
 
