@@ -38,7 +38,7 @@ Then for the inverse:
 
 - Show okay results.
 - However, Mainly tested on small problems
-- A plus for the simple approach: they demonstrate for weight based pruning that it chooses the wrong weight. 
+- A plus for the simple approach: they demonstrate for weight based pruning that it chooses the wrong weight. *(not sure about their reasoning tbh..)*
 	- Question is if their conclusion that this is very fatal for big networks is true because they are actually better at overcoming this.
 	- Magnitude based actually did better than OBD in this setting
 
