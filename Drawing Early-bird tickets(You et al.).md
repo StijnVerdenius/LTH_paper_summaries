@@ -52,3 +52,4 @@ It compares favorably to other SOTA pruning methods such as Lottery Ticket, SNIP
 
 ### Potential research directions (Andrei)
 Use iterative magnitude pruning to attain higher sparsity. See if rewinding to a later iteration helps (authors rewind all the way back to 0).
+Are there other ways to facilitate the uncovery of early-bird tickets besides large learning rate?
