@@ -1,6 +1,6 @@
 # The State of Sparsity in Deep Neural Netoworks
 
-Contributions:
+### Contributions:
 - Authors perform a comprehensive evaluation of variational dropout, L0 regularization and magnitude pruning on large-scale networks. They show that L0 and VD perform incosistently for such large-scale networks, and magnitude pruning can attain comparable results
 - They achieve SOTA sparsity-accuracy trade-off for RESNET50 by only using magnitude pruning
 - They repeat the lottery ticket (Frankle & Carbin, 2018) and scratch (Liu et al., 2018) experiments on Transformer and ResNet-50 across a full range of sparsity levels, showing that unstructured sparse architectures learned through pruning cannot be trained from scratch to the same test set performance as a model trained with pruning as part of the optimization process.
@@ -24,5 +24,5 @@ Contributions:
 - Authors provide strong counterexamples to two recently proposed theories that models learned through pruning techniques can be trained from scratch to the same testset performance of a model learned with sparsification aspart of the optimization process.(???)
 - Authors were not able to reproduce the results of the original LTH paper. However, they experimented with large datasets and models. This was before the stability paper got out which fixed that
 
-# REVIEW LATER:
+## REVIEW LATER:
 "Model trained" with sparsity as part of the optimization process" -> Not entirely sure what that means atm. Does it refer to VD and L0? How does that tie into their experiments?
