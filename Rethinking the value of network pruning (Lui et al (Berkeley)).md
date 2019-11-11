@@ -26,4 +26,4 @@ Authors note that they could not reproduce the results of the original LTH. Howe
 
 In the case of unstructured pruning on CIFAR, the difference in learning rate explains the contradictory behavior. For structured pruning, regardless of learning rate, the winning ticket does not outperform random initialization.
 
-**this was, however, also before the Stabilizing the lottery ticket paper**
+> **this was, however, also before the Stabilizing the lottery ticket paper**
