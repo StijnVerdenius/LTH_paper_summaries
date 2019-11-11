@@ -1,4 +1,6 @@
 # Stabilizing the Lottery Ticket Hypothesis
+[Link to paper](https://arxiv.org/abs/1903.01611)
+
 
 Main limitation of LTH is the lack of training for deep networks. This is because of stability issues. Now we train a bit first before applying the algorithm of IMP algorithm after k steps for the first time. *“Rewinding instead of resetting; early but not at time 0” .*
 
@@ -39,5 +41,6 @@ Stability seems to correlate with early rewinding and improved accuracy, when co
 *“However, to the best of our knowledge, our work is the first to show that it is possible to prune(1) so early in training (2) to such extreme levels of sparsity (3) on such large-scale tasks.”*
 
 
-**Note: Lot of sources mentioned just before the conclusion
-Possibly interesting to investigate: can more stable optimizers (i.e. RAdam, Ranger) remove the need for warmup and improve stability even further? (as a side effect this would also make it possible to rewind even earlier during training) Also, does dropout relate in any way to this stability term? (since it prevents co-adaptation of neurons, possibly priming them to be pruned)**
+**Note: Lot of sources mentioned just before the conclusion**
+
+> Possibly interesting to investigate: can more stable optimizers (i.e. Adam, Ranger) remove the need for warmup and improve stability even further? (as a side effect this would also make it possible to rewind even earlier during training) Also, does dropout relate in any way to this stability term? (since it prevents co-adaptation of neurons, possibly priming them to be pruned)**
