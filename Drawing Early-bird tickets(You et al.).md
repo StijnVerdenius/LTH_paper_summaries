@@ -43,3 +43,9 @@ Failry consistent behavior observed:
 
 It does seem to concur the hypothesis that a network first learns important connectivity patterns and then fixes them.
 Since ticket masks quickly become stable and hardly change after early training, drawing EB tickets makes sense.
+
+Therefore, to identify when to extract EB ticket, measure mask distance between consecutive epochs. Draw EB ticket when distance (normalized between 0 and 1) lower than a threshold epsilon. In practice, authors extract EB ticket only if past 5 epochs are lower than threshold eps to avoid irregular fluctuation in early training.
+
+### EB training
+Literally draw an EB ticket according to the criterion mentioned couple lines above, reset it to its initial weights, and then fine-tune it. That's all.
+It compares favorably to other SOTA pruning methods such as Lottery Ticket, SNIP, Network Slimming and ThiNet, in terms of FLOPs and energy consumption. (which easily translates to speed) (see paper for more details)
