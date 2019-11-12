@@ -70,13 +70,14 @@ Realised the parameter uncertainty is estimatable.
 	- Generally seems good first right research
 	- Got criticism that what I do is not gonna be helpfull computationally because of the multiple foward passes we would have to do in bayesian nns
 	
-### Monday 12-11-2019
+### Monday 11-11-2019
 
 - Read criticism on LTH in 'rethinking the value of network pruning', seems to be more on the pruning algorithms in general.
 - Read the brain damage/surgion papers that claim magnitude based pruning is bs. Wonder why many papers do that now then? Maybe becasue networks have become too big for these second-order derivative methods that they claim are better.
 - Coaching sessions gave some outlook on thesis formatting
 
-### Tuesday 13-11-2019
+### Tuesday 12-11-2019
 
-- l0-regularization paper that patrick reccomended
+- Read l0-regularization paper that patrick reccomended, seems to be a good speedup which is theoretically grounded but sparsity is not as high as one would think.
+- Prepared meeting with patrick.
 - 
