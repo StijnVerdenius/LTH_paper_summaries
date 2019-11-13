@@ -84,5 +84,6 @@ Realised the parameter uncertainty is estimatable.
 
 ### Wednesday 13-11-2019
 
-
+- Read state of sparsity paper, which gave a good overview of recent methods and a paper about distributional shifts that was a bit meh..
+- Meeting patrick:
 
