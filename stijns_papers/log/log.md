@@ -4,7 +4,6 @@
 
 ### Monday 04-11-2019
 
-
 - Hooked up screens
 - Install and contracts
 - Considered combining lottery ticket hypothesis with Bayesian networks
@@ -81,6 +80,9 @@ Realised the parameter uncertainty is estimatable.
 - Read l0-regularization paper that patrick reccomended, seems to be a good speedup which is theoretically grounded but sparsity is not as high as one would think.
 - Prepared meeting with patrick.
 - Reading Bayesian compression paper, not really understanding the math. Seems as if they show group sparcity causes speed-up, while weight sparsity only reduces memory space. This doesn't seem right to me but is possible. 
+- Realised that weight pruning might help wiht speedup but not with memory fitting as activations or channels can not be pruned this way.
 
 ### Wednesday 13-11-2019
+
+
 
