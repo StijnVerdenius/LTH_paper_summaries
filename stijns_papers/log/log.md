@@ -80,4 +80,7 @@ Realised the parameter uncertainty is estimatable.
 
 - Read l0-regularization paper that patrick reccomended, seems to be a good speedup which is theoretically grounded but sparsity is not as high as one would think.
 - Prepared meeting with patrick.
-- 
+- Reading Bayesian compression paper, not really understanding the math. Seems as if they show group sparcity causes speed-up, while weight sparsity only reduces memory space. This doesn't seem right to me but is possible. 
+
+### Wednesday 13-11-2019
+
