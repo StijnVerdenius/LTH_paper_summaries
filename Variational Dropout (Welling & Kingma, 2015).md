@@ -41,9 +41,15 @@ $$w_i = s_i \theta_i $$$$s_i \sim q(s_i)$$$$ q(s_i)=N(1, \alpha)$$
 
 #### Towards Variational Dropout
  
-Now, we will make \\(\alpha\\) trainable by optimizing a new objective (see formula 12 in paper), that is not relevant to the implementation. We can choose to either do a global one, per-row, or even per-parameter. However, the alphas should be constrained to be between 0 and 1. 
+Now, we will make \\(\alpha\\) trainable by optimizing a new objective (see formula 12 in paper), that is not relevant to the implementation. This wasn't possible before the bayesian interpretation because it ignored variance. 
+
+We can choose to either do a global alpha, per-row, or even per-parameter. However, the alphas should be constrained to be between 0 and 1. 
+
+
 
  > ***I skipped the rest*** 
+ 
+ [Check this video](https://www.youtube.com/watch?v=GIpk4F9VL1U) 
  
 ## Conclusion
 
