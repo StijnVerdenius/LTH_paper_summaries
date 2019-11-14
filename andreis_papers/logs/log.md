@@ -9,7 +9,6 @@
 - Rethinking the value of neural network pruning
 - The state of sparsity in Deep NNs
 - Rethinking the value of neural network pruning
-
 ### Overview
 Understood the lottery ticket hypothesis and its implications as well as some attempts to explain these results from the follow-up papers. Got a birds-eye view on the field of model compression in general, and researched into what are the current state-of-the-art methods out there. (variational dropout, L0 regularization, simple magnitude pruning). 
 
@@ -20,7 +19,8 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 - One ticket to win them all
 - Targeted dropout
 - Learning Sparse Neural Networks Through L0 reg. (mostly skimmed the equations, just wanted to get general idea)
-
+- Evaluating Lottery Tickets under Distributional Shifts
+- Sparse Training from Scratch : Faster Training without Losing Performance (in progress)
 ### Overview
 
 
@@ -32,6 +32,8 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 - Literature is quite unclear on which pruning methods work best. Different baselines and methodologies are used across papers and results are sometimes conflicting. 
 - However, it does seem that the magnitude pruning technique can reach comparable or better results as the more involved Variational Dropout or L0 regularization while being computationally less intensive. 
 
-## Research Idea
+## Research Ideas
+### Monitoring Sign-flips
 In the "Zeros, signs and the supermask" paper, authors discover that the only important thing when re-initializing the network's weights are the signs. They even demonstrate that resetting to an arbitrary constant that has the same sign also works. 
-As such, one potential research idea is to monitor how the signs flip during training, and, if a weight flips signs, it can be pruned, and training can continue. This works because it is equivalent to resetting the network where all weights have the same sign. Potentially this can be used in conjunction with magnitude pruning to develop some sort of hybrid criterion. The hope is that this scheme will improve training speed.
+As such, one potential research idea is to monitor how the signs flip during training, and, if a weight flips signs, it can be pruned, and training can continue. Potentially this can be used in conjunction with magnitude pruning to develop some sort of hybrid criterion. The hope is that this scheme will improve training speed.
+This can initially be tested on a small-scale dataset and model e.g. a simple conv-net on CIFAR-10 or even a fully connected network on MNIST. Implementation should be rather straightforward.
