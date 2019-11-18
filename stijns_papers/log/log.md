@@ -1,6 +1,6 @@
-# LOG
+# **LOG**
 
-## Exploration
+## **Exploration** stage
 
 ### Monday 04-11-2019
 
@@ -18,18 +18,18 @@ Some questions
 
 ### Tuesday 05-11-2019
 
-LTH consists of:
+**LTH consists of:**
     - Commensurate Training time: j >= j’
     - Commensurate Accuracy: a <= a’
     - Fewer Parameters: norm(params) >= norm(params’)
-Some questions: 
+**Some questions: **
 
   - What are the algorithmic competitors of lottery ticket hypothesis?
   - Can pruning be directly integrated into training?
   - What is the contribution of LTH in comparison to the two papers from the heading in this document: ‘Training a pruned model from scratch performs worse‘.
   - Figure 1 in the main paper; why is early stopping criterium met earlier in unpruned networks? Overfitting?
 
-Some research ideas:
+**Some research ideas:**
 
 - Study the winning tickets for particular tasks and design new architectures from that given trends in tickets.
 - LTH trains until timestep j and then prunes. However, how do we determine time-step j? Perhaps, in a Bayesian Neural Network, we can indicate by uncertainty which weights are to be pruned and thereby prune every timestep <- Stijn
@@ -50,7 +50,7 @@ https://joshfeldman.net/ml/2018/12/17/WeightUncertainty.html
 - Are weights that remain unbtouhed changing much over train-time compared to other weights? I.e. are they close to their final value already?
 
 
-Split ideas
+**Split ideas**
 
 - Different data-types (NLP vs CV)
 - Bayesian vs. Group sparsity <- first approach probably?
@@ -85,5 +85,41 @@ Realised the parameter uncertainty is estimatable.
 ### Wednesday 13-11-2019
 
 - Read state of sparsity paper, which gave a good overview of recent methods and a paper about distributional shifts that was a bit meh..
-- Meeting patrick:
 
+##### Meeting patrick:
+
+- seems disinterested in topic and publications
+- says perhaps a application is better to pursui
+- says we should start trying things out
+- might be interesting:
+	- Adversarial attacks
+	- Weight heuristics on gradient, varriance and uncertainty
+- made me say: "I am interested in researching how weight uncertainty relates to them being dropped out and i hypothesize it is a good indication for them. I hope to use that to cut out during training and maybe remove some hyperparameters of the LTH algorithm"
+- Asked to share a overleaf of the thesis
+
+### Thursday 14-11-2019 
+
+- ran a approximate l0 regularization experiment. It consists of having a loss term that takes in a parameter set, then with a limit parameter L, which is initialised at the max value of the weight matrix it will take the tensor, substract the limit and then relu, same for the negative tensor and added limit. Then we remain with the entries that are within that limit, which we can then sum up somehow. Not sure if it is valid, im tired. I might just be doing l2 loss.
+- Read about variational dropout, still some things unclear but it seems cool. 
+- Defined which methods we wanna have a toy experiment on
+
+### Friday 15-11-2019
+
+Recreated experiments on LTH (non stabilized) with a simple 3 layer FC-relu network on MNIST. We found that:
+
+- Restart matters in high sparcity levels (\>80%)
+- LTH works in very high level of sparsity (~98%)
+- Sparse networks generalize better up to a certain point
+
+**Results:**
+
+### Monday 18-11-2019
+
+- Worked on logs
+- Read SNIP paper
+- Started on section 2 of the actual thesis as well as formatting the thesis.
+
+Meeting with Maarten:
+	- 
+
+### Tuesday 19-11-2019
