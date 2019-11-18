@@ -1,4 +1,4 @@
-maandag, 18. november 2019 03:50 
+
 [Bayesian compression for deep learning (Louizos , Welling; 2017).md).](./Bayesian compression for deep learning (Louizos , Welling; 2017).md)
 
 [Deep Compression: Pruning, trained quantization, huffman coding (Han et al 2016).md](./Deep Compression: Pruning, trained quantization, huffman coding (Han et al 2016).md)
