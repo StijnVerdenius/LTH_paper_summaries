@@ -26,9 +26,13 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 
 ### Implementation
 - Worked with Stijn on reproducing the lottery ticket hypothesis and running some experiments with that.
+
+## Log Week 3
+
+### Papers read & summarised:
+- To prone or not to prune: exploring the efficacy of neural network pruning
+- Deep Compression : Pruning, Trained Quantization, Huffman Coding (in progress)
 ### Overview
-
-
 ## Notes on what I found
 - Only the sign matters when re-initialising the weights for winning tickets
 - Winning Lottery tickets can transfer across datasets as well as optimizers succesfully, implying generality. This also possibly hints at the existance of a "lottery ticket" initialization scheme.
