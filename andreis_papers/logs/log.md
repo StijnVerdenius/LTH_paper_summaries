@@ -20,10 +20,19 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 - Targeted dropout
 - Learning Sparse Neural Networks Through L0 reg. (mostly skimmed the equations, just wanted to get general idea)
 - Evaluating Lottery Tickets under Distributional Shifts
-- Sparse Training from Scratch : Faster Training without Losing Performance (in progress)
+- Sparse Training from Scratch : Faster Training without Losing Performance
+- Variational Dropout (Kingma, Welling) (needs revisiting)
+- Variational Dropout Sparsifies Neural Networks (needs revisiting)
+
+### Implementation
+- Worked with Stijn on reproducing the lottery ticket hypothesis and running some experiments with that.
+
+## Log Week 3
+
+### Papers read & summarised:
+- To prone or not to prune: exploring the efficacy of neural network pruning
+- Deep Compression : Pruning, Trained Quantization, Huffman Coding (in progress)
 ### Overview
-
-
 ## Notes on what I found
 - Only the sign matters when re-initialising the weights for winning tickets
 - Winning Lottery tickets can transfer across datasets as well as optimizers succesfully, implying generality. This also possibly hints at the existance of a "lottery ticket" initialization scheme.
@@ -36,4 +45,4 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 ### Monitoring Sign-flips
 In the "Zeros, signs and the supermask" paper, authors discover that the only important thing when re-initializing the network's weights are the signs. They even demonstrate that resetting to an arbitrary constant that has the same sign also works. 
 As such, one potential research idea is to monitor how the signs flip during training, and, if a weight flips signs, it can be pruned, and training can continue. Potentially this can be used in conjunction with magnitude pruning to develop some sort of hybrid criterion. The hope is that this scheme will improve training speed.
-This can initially be tested on a small-scale dataset and model e.g. a simple conv-net on CIFAR-10 or even a fully connected network on MNIST. Implementation should be rather straightforward.
+This can initially be tested on a small-scale dataset and model e.g. a simple conv-net on CIFAR-10 or even a fully connected network on MNIST dataset. Implementation would be done using PyTorch, and emulating hyperparameters from the original Lottery Tikcet Hypothesis to ensure fair comparison.
