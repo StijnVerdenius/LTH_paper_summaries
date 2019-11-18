@@ -1,6 +1,6 @@
 # **LOG**
-
-## **Exploration** stage
+<body onLoad="window.scrollBy(0, window.height)">
+## **Exploration**-stage
 
 ### Monday 04-11-2019
 
@@ -9,7 +9,7 @@
 - Considered combining lottery ticket hypothesis with Bayesian networks
 - Found a supervisor
 - accessed das4 account and surfsara. Can only do das4 from desktop because of vpn issues. surfsara is probably part of DL4NLP
-- chose a few paper to explore (see commented out):
+- chose a few paper to explore (see commented out):s
 
 Some questions
 
@@ -113,13 +113,18 @@ Recreated experiments on LTH (non stabilized) with a simple 3 layer FC-relu netw
 
 **Results:**
 
+TODO
+
 ### Monday 18-11-2019
 
 - Worked on logs
-- Read SNIP paper
+- Read SNIP papers
 - Started on section 2 of the actual thesis as well as formatting the thesis.
+- Read Soft weight sharing
 
 Meeting with Maarten:
-	- 
+	- Didn't seem to be too worried. He figured my experimental designs were actually good starting points. 
+	- Maybe I have to become a bit more independent
+	- Very important to start documenting all my experiments, maybe ask anton for reproducibility of experiments
 
 ### Tuesday 19-11-2019
