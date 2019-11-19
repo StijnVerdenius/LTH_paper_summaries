@@ -31,7 +31,8 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 
 ### Papers read & summarised:
 - To prone or not to prune: exploring the efficacy of neural network pruning
-- Deep Compression : Pruning, Trained Quantization, Huffman Coding (in progress)
+- Deep Compression : Pruning, Trained Quantization, Huffman Coding
+- Global Sparse Momentum SGD for pruning very deep NNs (in progress)
 ### Overview
 ## Notes on what I found
 - Only the sign matters when re-initialising the weights for winning tickets
