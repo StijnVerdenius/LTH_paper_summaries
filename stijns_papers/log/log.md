@@ -126,5 +126,53 @@ Meeting with Maarten:
 	- Didn't seem to be too worried. He figured my experimental designs were actually good starting points. 
 	- Maybe I have to become a bit more independent
 	- Very important to start documenting all my experiments, maybe ask anton for reproducibility of experiments
+	
+- Made leren en beslissen projects
 
 ### Tuesday 19-11-2019
+
+- Read han et al papers (2015 & 2016)
+- picked 3 projects that perhaps will be good for leren en beslissen 
+- Started on background section
+
+### Wednesday 20-11-2019
+
+- Read targeted dropout paper 
+- Worked out quite a lot for thesis background section, mostly the big picture (done)
+- planned for omnimap
+- Looked at geometric median (4)
+- Made project description for datanose 
+
+### Thursday 21-11-2019
+
+first thing tomorrow
+- Refined two projects for leren en beslissen (2)
+- Read what you wrote yesterday
+
+### Friday 22-11-2019
+
+work @ omnimap
+
+
+
+
+
+
+
+
+
+$$\vdots$$
+
+
+
+
+
+
+
+
+
+
+
+### Wednesday 27-11-2019
+
+work @ omnimap
