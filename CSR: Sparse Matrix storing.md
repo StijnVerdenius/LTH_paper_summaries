@@ -41,7 +41,7 @@ $$M_{i,j} \rightarrow \text{ value}$$
  Keys can be stored with lower bits so you get:
  $$ (m \times n)*2bit + 32bit * (1+ \neg z)$$
  
- If z is low enough, i.e. your matrix is sparse, this makes sense.
+ If  \\(\neg z \\) is low enough, i.e. your matrix is sparse, this makes sense.
 
 ### Compressed Sparse Row (CSR)
 
@@ -65,7 +65,6 @@ Same as CSR but then colums and rows are swapped. (transposed)
 ## Conclusion
 
 **it makes a hell of a lot of difference**
-
-![](./stijns_papers/figs/Sparse Matrix Storing/capacity1.png) 
+![](./stijns_papers/figs/Sparse_Matrix_Storing/capacity1.png) 
 
 

@@ -32,7 +32,10 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 ### Papers read & summarised:
 - To prone or not to prune: exploring the efficacy of neural network pruning
 - Deep Compression : Pruning, Trained Quantization, Huffman Coding
-- Global Sparse Momentum SGD for pruning very deep NNs (in progress)
+- Global Sparse Momentum SGD for pruning very deep NNs
+- Learning both Weights and Connections for EfficientNeural Networks (in progress)
+- SOFTWEIGHT-SHARING FORNEURALNETWORKCOMPRESSION (in progress)
+- Dynamic network surgery for efficient DNNs (??)
 ### Overview
 ## Notes on what I found
 - Only the sign matters when re-initialising the weights for winning tickets
@@ -47,3 +50,6 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 In the "Zeros, signs and the supermask" paper, authors discover that the only important thing when re-initializing the network's weights are the signs. They even demonstrate that resetting to an arbitrary constant that has the same sign also works. 
 As such, one potential research idea is to monitor how the signs flip during training, and, if a weight flips signs, it can be pruned, and training can continue. Potentially this can be used in conjunction with magnitude pruning to develop some sort of hybrid criterion. The hope is that this scheme will improve training speed.
 This can initially be tested on a small-scale dataset and model e.g. a simple conv-net on CIFAR-10 or even a fully connected network on MNIST dataset. Implementation would be done using PyTorch, and emulating hyperparameters from the original Lottery Tikcet Hypothesis to ensure fair comparison.
+
+### Neuron Fusion
+While unstructured pruning can help save storage space, it is not quite so effective at reducing computational cost. As such, it's natural to wonder if you can convert a sparse matrix into dense form. One idea to do this is by fusing neurons. The basic idea is to first obtain a sparse network (by using any regular pruning method) and then fuse neurons together. There are quite a few degrees of freedom to this problem, which are worth exploring: (1) which criterion to use when fusing neurons? how many? (2) how should the neurons be fused together? (3) is retraining required? (4) is it dependant on network structure, sparsity levels, hyperparameters, etc?
