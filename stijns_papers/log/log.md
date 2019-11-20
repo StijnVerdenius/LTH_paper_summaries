@@ -140,14 +140,10 @@ Meeting with Maarten:
 - Read targeted dropout paper 
 - Worked out quite a lot for thesis background section, mostly the big picture (done)
 - planned for omnimap
-- Looked at geometric median (4)
 - Made project description for datanose 
 
 ### Thursday 21-11-2019
 
-first thing tomorrow
-- Refined two projects for leren en beslissen (2)
-- Read what you wrote yesterday
 
 ### Friday 22-11-2019
 
