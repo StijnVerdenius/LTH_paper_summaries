@@ -11,7 +11,7 @@
 
 ## Method
 
-1. Train normally with l1 regularization and dropout
+1. Train normally with l2 regularization and dropout
 2. Prune on magnitude
 3. Finetune with l2 regularization, adjusting dropout ratio
 *"During retraining, it is better to retain the weights from the initial training phase for the connectionsthat survived pruning than it is to re-initialize the pruned layers"*
@@ -27,7 +27,7 @@
 ## Conclusion
 
 - Regularization important
-- Retaining weights important
+- Retraining weights important
 - Iterative pruning most important
 - Storage of sparse matric can be reduced greatly with some tricks (important)
 
@@ -35,5 +35,5 @@
 ## Limitations
 
 - Regularizations are important
-- Doesn't finetune convs
+- Prune+finetune conv and fc layers separately
 
