@@ -33,9 +33,10 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 - To prone or not to prune: exploring the efficacy of neural network pruning
 - Deep Compression : Pruning, Trained Quantization, Huffman Coding
 - Global Sparse Momentum SGD for pruning very deep NNs
-- Learning both Weights and Connections for EfficientNeural Networks (in progress)
-- SOFTWEIGHT-SHARING FORNEURALNETWORKCOMPRESSION (in progress)
-- Dynamic network surgery for efficient DNNs (??)
+- Learning both Weights and Connections for Efficient Neural Networks
+- Soft weight-sharing for neural network compression (needs revisiting)
+- Optimal Brain Damage
+- Optimal Brain Surgeon (in progress)
 ### Overview
 ## Notes on what I found
 - Only the sign matters when re-initialising the weights for winning tickets
