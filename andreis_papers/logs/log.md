@@ -36,7 +36,13 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 - Learning both Weights and Connections for Efficient Neural Networks
 - Soft weight-sharing for neural network compression (needs revisiting)
 - Optimal Brain Damage
-- Optimal Brain Surgeon (in progress)
+- Optimal Brain Surgeon (needs revisiting)
+
+## Log Week 4
+
+### Papers read & summarised:
+- Pruning Filters for Efficient Convnets
+- Group Sparse Regularization for deep neural networks
 ### Overview
 ## Notes on what I found
 - Only the sign matters when re-initialising the weights for winning tickets
