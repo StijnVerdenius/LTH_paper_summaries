@@ -144,31 +144,40 @@ Meeting with Maarten:
 
 ### Thursday 21-11-2019
 
+- Mostly debugging code for stabilizing
+- learned about braincreator-clusters
+- rewrote januari projects
 
 ### Friday 22-11-2019
 
 work @ omnimap
 
 
+### Monday 25-11-2019
 
+- Rewrote general background.
+- Coaching sessions: talked about positioning in well established fields and the role supervisors should really have 
 
+### Tuesday 26-11-2019
 
+- Wrote most of the L0-reg derivation
+- Meeting with Patrick:
 
+we talked about that the contradictions between papers could be dealt with in an ablation study, I should start implementing and collecting all the metrics already as well as saving all model checkpoints so things could be collected later as well. Mostly focus on MNIST, CIFAR, ImageNet so far. Another question was: what kind of task would we want sparsity for? I linked that to my motivations section in my overleaf. in this section there is one about overparametrisation, which I linked to overfittting but apperantly after #params hits #datapoints, network overfitting goes down. he didn't have the paper. I still think generalisation and maybe even adversarial attacks could be interesting but it needs a better brainstrom so patrick advised to start with some baselines based on regularisation first. He said to find MAP estimates of networks with regularisation based on heavy tailed distributions such as heavy distribution, horse shoe, L1, horse-shoe+, inverse gamma-gamma, student log t, student t, LP-regularisation with 1>P>0.
 
+Then we brainstromed about my and patricks ideas: Resnet on weight matrices where each layers weights is the previous weight + an outer product of two vectors. for my idea about bayes by backprop he reccomended going to the addition of something and slab distribution, where you have 3 parameters to govern model parmeters.
 
-
-$$\vdots$$
-
-
-
-
-
-
-
-
-
-
+- Finalized idea for januari projects
+- Read some papers
 
 ### Wednesday 27-11-2019
 
 work @ omnimap
+
+### Thursday 28-11-2019
+
+Holiday
+
+### Friday 29-11-2019
+
+Holiday

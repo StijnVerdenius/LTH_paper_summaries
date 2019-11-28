@@ -26,7 +26,7 @@ $$\theta_j=z_j \tilde{\theta_j}$$
 
 2. Define a Bernoulli overt \\(z_j=q(z_j|\pi_j)\\), thereby defining it as a binary gate
 
-3. Define \\(\theta_j \neq 0\\), as \\(z_j\)) is managing the going to zero already.
+3. Define \\(\theta_j \neq 0\\), as \\(z_j\\) is managing the going to zero already.
 
 4. 
 	- Reformulize original optimisation:
