@@ -44,6 +44,7 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 - Pruning Filters for Efficient Convnets
 - Group Sparse Regularization for deep neural networks
 - Learning Structured Sparsity in Deep Neural Networks
+- Rigging the Lottery : Making all tickets winners
 ### Overview
 ## Notes on what I found
 - Only the sign matters when re-initialising the weights for winning tickets

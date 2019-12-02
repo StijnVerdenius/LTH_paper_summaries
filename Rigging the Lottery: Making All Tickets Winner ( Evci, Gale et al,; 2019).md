@@ -55,7 +55,7 @@ In a nutshell:
 - Tested on Imagenet. Best performance per flop and per pre-set sparsity. 
 - Static networks undeperform to dynamic architectures. 
 - Networks that can also grow are better
-- ERK is the best sparsity prior (although it requires a lot of flops in its own)
+- ERK is the best sparsity prior (although it requires a lot of flops in its own) -> why does ERK require more flops? Unclear
 - Update frequency is 100 and initial drop fraction is 0.4
 - dynamic mask methods have consistent lower loss in comparison with static methods (see fig 6, dont really get left)
 
