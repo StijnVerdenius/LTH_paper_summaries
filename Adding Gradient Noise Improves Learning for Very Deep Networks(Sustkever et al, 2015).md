@@ -18,7 +18,7 @@ Authors find that when using a simple init (Normal with mean 0 and variance of 0
 ![](./figs/gradient_noise/table_1.png) 
 
 They show that by using carefully tuned gradient clipping and initialization schemas, adding gradient noise is not necessary. However, with poor initialization, gradient noise helps tremendously. So, it should be good to add gradient noise to more complex networks (since they are even harder to initialize). Authors also find that training with gradient noise is insensitive to the gradient clipping values. By tuning the gradient clipping threshold, it is possible to get comparable accuracy without noise for this problem. 
-For **Neural Programmer and Neural Random Access Machines**, gradient clipping is crucial to training with added noise.
+For **Neural Programmer and Neural Random Access Machines**, gradient clipping is crucial to training with added noise. This is likely because the effect of random noise is washed away when gradients become too large. 
 
 For **Memory Networks** the noise is added after gradient clipping. Value of noise is finetuned at 0.001. 
 
