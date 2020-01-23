@@ -3,7 +3,19 @@
 
 *"Deep nets generalize well despite having more parameters than the number of training samples. Current approaches do not as yet have a metric in sample complexity bounds better than naive parameter counting. Our results also provide some theoretical justification for widespread empiricalsuccess in compressing deep nets."*
 
-> "Sample Size Upper Bounds" keeps getting mentioned, is this upper confidence bound???
+## Some Definitions:
+
+**sample complexity** is the number of training-samples that it needs in order to successfully learn a target function, so that the function returned by the algorithm is within an arbitrarily small error of the best possible function, with probability arbitrarily close to 1. 
+
+**Sample Size Upper Bounds**
+
+**Generalisation bounds**
+
+**Probably Approximately Correct (PAC) learnability**: there exists an algorithm that is approximatly correct at any data distribution.
+
+**Rademacher complexity:** can an algorithm fit random labels? (data-dependent). Very related to VC-dimension.
+
+**VC dimension**  is a measure of the capacity (complexity, expressive power, richness, or flexibility) of a space of functions that can be learned by a statistical classification algorithm. It is defined as the cardinality of the largest set of points that the algorithm can shatter. A set of points is said to be shattered by a class of functions if, no matter how we assign a binary label to each point, a member of the class can perfectly separate them. 
 
 ## Related work
 - Some papers have suggested that nets that generalize well are flat  minima in the optimization landscape.
