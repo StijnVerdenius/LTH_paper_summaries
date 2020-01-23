@@ -43,6 +43,22 @@ Understood the lottery ticket hypothesis and its implications as well as some at
 ### Papers read & summarised:
 - Pruning Filters for Efficient Convnets
 - Group Sparse Regularization for deep neural networks
+- Learning Structured Sparsity in Deep Neural Networks
+- Rigging the Lottery : Making all tickets winners
+
+
+## Log Week 5
+### Papers Read & Summarised
+- Deep Rewiring
+- A closer look at structured pruning
+- Adding Gradient Noise Improves learning for very deep networks
+
+## Log week 6
+### Papers Read & Summarised
+- Xavier init.
+- Kaiming init.
+- Learning with random learning rates (in progress)
+
 ### Overview
 ## Notes on what I found
 - Only the sign matters when re-initialising the weights for winning tickets
