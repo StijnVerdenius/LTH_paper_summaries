@@ -1,0 +1,3 @@
+## Deep Learning Scale is predicatble, empirically
+This paper provides a large scale empirical characterization of generalization error and model size growth as trainig sets grow. 
+They show that DL generalization shows power-law improvement, but with exponents that must be predicted empirically. They introduce a methodology to accuractely predict generalization error and model size scaling with increased training set size. Improved model architecture sand  optimizers  can  improve  the  power-law  intercept,  but  not  the  exponent. Further, they describe the significant implications of predictable accuracy and model size scaling. 
